@@ -19,12 +19,12 @@ Currently there are two ideas: The idea for 'Human Expo' and the idea for a 'Twi
 
 # Twilio Relay
 
-Twilio Relay is an API that allows you to match incoming with outgoing communication. Inspired by the [1920s switchboard operator](https://en.wikipedia.org/wiki/Telephone_switchboard), Twilio Relay offers an Open Source OpenAPI to better communicate with your users and clients.
+**Twilio Relay** is an API that allows you to match incoming with outgoing communication. Inspired by the [1920s switchboard operator](https://en.wikipedia.org/wiki/Telephone_switchboard), Twilio Relay offers an Open Source OpenAPI to better communicate with your users and clients.
 
 Twilio Relay offers people the ability to create different communiation channels and provide APIs for using those. The advantage of BYOK to openapi is you can send to anyone.
 
 - Ability to signup with your twilio/sendgrid creds.
-- Get an openapi for each phonenumber/email-sender so no mistakes can be made.
+- Get an openapi for each "persona". each persona can have multiple phonenumbers and email-senders connected so no mistakes can be made.
 - Ability to proxy through incoming calls and/or store them
 - Ability to store outgoing and incoming messages and emails
 - Match incoming with outgoing communication
@@ -32,4 +32,4 @@ Twilio Relay offers people the ability to create different communiation channels
 # An Example:
 
 - `human.actionschema.com/wijnandkarsens/openapi.json` would be where people can contact me through a predetermined sender (actionschema).
-- `relay.actionschema.com/screenless` would be where screenless can contact anyone with their own number(s) and use a callback-webhook system to propogate responses to the right place.
+- `relay.actionschema.com/screenless/openapi.json` would be where screenless can contact anyone with their own number(s) and use a callback-webhook system to propogate responses to the right place.
